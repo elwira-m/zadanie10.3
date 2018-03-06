@@ -1,0 +1,27 @@
+/*rozmiar i wysrodkowanie kontenera, owerflow: nic nie wyplywa poza nego, ramka*/
+#carousel {
+  width: 400px;
+  overflow:	hidden;
+  margin: 0 auto;   
+  border: 10px solid #464c56;
+  border-radius: 3px;
+}
+
+/* szerokość karuzeli równa szerokości wszystkich elementów 5x400px, zresetowany domyślny padding i margin*/
+#carousel ul {
+  width: 2000px;
+  padding: 0;
+  margin: 0;
+}
+/* element li musi mieć taką wielkość jak image; reset wypunktowania listy, float - jeden element ma być obok drugiego */
+#carousel ul li {  
+  width: 400px;
+  height: 300px;
+  list-style: none;
+  float: left;
+}
+
+img {
+	height: 300px;
+	width: 400px;
+}
